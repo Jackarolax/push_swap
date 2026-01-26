@@ -114,8 +114,8 @@ void	sort3(t_stack **stack);
 void	sort_small(t_stack **stack_a, t_stack **stack_b);
 
 //cost_options (sorting)
-t_cost	init_cost_options(int *pos, int *sizes);
-void	set_optimal_cost_per_node(t_stack *node_a, int *pos, int *sizes);
+t_cost	init_cost_options(int pos[2], int sizes[2]);
+void	set_optimal_cost_per_node(t_stack *node_a, int pos[2], int sizes[2]);
 void	calculate_optimal_costs(t_stack **stack_a, t_stack **stack_b);
 t_stack	*get_smallest_cost_node(t_stack **stack_a);
 

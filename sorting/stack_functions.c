@@ -33,13 +33,11 @@ int	get_position(t_stack **stack, int i)
 //does calculate optimal rotation yet
 int	get_rotation_b(t_stack *node_a, t_stack **stack_b)
 {
-	int		rotation;
 	int		nearest_smaller_i;
 	long	nearest_larger_i;
 	t_stack	*temp;
 
 	temp = *stack_b;
-	rotation = 0;
 	nearest_smaller_i = -1;
 	nearest_larger_i = 2147483648;
 	while (temp)
